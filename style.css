@@ -1,0 +1,30 @@
+.fotkeSlider{
+    border-radius: 10px;
+    
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    padding: 100em;
+    margin-bottom: 1em;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.naslov{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.nav_logo{
+    width: 100px;
+    height: 50px;
+}
+
