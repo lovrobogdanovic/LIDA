@@ -1,30 +1,380 @@
-.fotkeSlider{
-    border-radius: 10px;
-    
+.container {
+    background-color: #F4F3F4;
 }
 
-.navbar{
+.fotkeSlider {
+    border-radius: 10px;
+
+}
+
+.carousel-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* Prilagodit visinu po potrebi */
+}
+
+
+.carousel-inner {
+    border-radius: 10px;
+    /* Dodati željeni radijus zaobljenosti rubova */
+}
+
+.carousel-heading h3,
+.carousel-heading h1 {
+    margin: 0;
+}
+
+.carousel-heading h3 {
+    color: #888;
+    /* Siva boja naslova "LIDA 2023" */
+    font-weight: 300;
+    /* Tanji font za naslov "LIDA 2023" */
+    margin-bottom: 20px;
+    /* Veći razmak ispod naslova "LIDA 2023" */
+}
+
+.carousel-heading h1 {
+    font-family: serif;
+    /* Serifni font za drugi naslov */
+    font-size: 50px;
+    /* Veća veličina fonta za drugi naslov */
+}
+
+.carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.navbar {
     display: flex;
     justify-content: flex-end;
     padding: 100em;
-    margin-bottom: 1em;
-    
+    margin-bottom: 5em;
+    margin-top: 1em;
+
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
 }
 
-.naslov{
+.naslov {
     display: flex;
     flex-direction: column;
-    
-    
+
+
 }
 
-.nav_logo{
-    width: 100px;
-    height: 50px;
+body {
+    margin: 80px;
+    font-family: 'Public Sans', sans-serif;
 }
 
+.container {
+    max-width: 760px;
+    /* Uobičajena širina sadržaja */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    /* Uobičajeni unutarnji razmak za sadržaj */
+    box-sizing: content-box;
+}
+
+/* Menu bar */
+
+.nav_logo {
+    width: 150px;
+    height: 70px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #B92C2A;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #B92C2A;
+}
+
+.navbar-nav .nav-item .dropdown-item:hover:not(.active) {
+    color: #B92C2A;
+}
+
+.navbar-nav .nav-item .nav-link.active::after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #B92C2A;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: 4px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+/*info-box*/
+.container {
+    padding: 20px;
+}
+
+.title {
+    font-size: 24px;
+    text-transform: lowercase;
+    color: gray;
+}
+
+.subtitle {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.slider-container {
+    /* Stilizacija slidera */
+    margin-top: 20px;
+}
+
+.content-container {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+/*info - nedovršeno
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-label {
+    color: red;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.info-value {
+    color: black;
+}
+*/
+
+
+/*news section - vidjet ću
+.card {
+    border-radius: 10px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    margin-bottom: 20px;
+    transition-duration: 5s;
+}
+
+h2 {
+    text-align: center;
+}
+
+.collapse {
+  transition: height 0.3s ease;
+  height: 0;
+  overflow: hidden;
+}
+
+.collapse.show {
+  height: auto;
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+.card-body {
+  position: relative;
+}
+
+.btn.collapsed .btn-text {
+  display: inline;
+}
+
+.btn .btn-text {
+  display: none;
+}
+
+.btn.collapsed .btn-icon-expand:before {
+  content: '+';
+}
+
+.btn .btn-icon-expand:before {
+  content: '-';
+}
+
+*/
+
+/*news section*/
+
+.news {
+    text-align: center;
+    margin-bottom: 50px;
+    /* Dodati željeni razmak ispod naslova "NEWS" */
+}
+
+.news-section {
+    margin-top: 20px;
+    /* Dodati željeni razmak iznad kartica */
+}
+
+.card {
+    margin-bottom: 20px;
+    /* Dodati željeni razmak između kartica */
+}
+
+
+/*button*/
+
+.btn.btn-primary.read-more {
+    background: none;
+    border: none;
+    padding: 0;
+    font-weight: bold;
+    color: #B92C2A;
+    /* Crvena boja teksta "Read more" */
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn.btn-primary.read-more:hover {
+    text-decoration: underline;
+}
+
+.btn.btn-primary.read-more:hover,
+.btn.btn-primary.read-more:focus,
+.btn.btn-primary.read-more:active {
+    background: none;
+    outline: none;
+}
+
+.btn.btn-primary.read-more:focus-visible,
+.btn.btn-primary.read-more:active {
+    box-shadow: none;
+}
+
+.btn.btn-primary.read-more::-moz-focus-inner {
+    border: 0;
+}
+
+.btn.btn-primary.read-more:not(:disabled):not(.disabled).active,
+.btn.btn-primary.read-more:not(:disabled):not(.disabled):active {
+    background-color: transparent;
+}
+
+.btn.btn-primary.read-more:active {
+    color: #B92C2A;
+    /* Dodatak: zadržava crvenu boju teksta prilikom klika */
+}
+
+
+/* Footer */
+.footer {
+    background-color: #1F2B37;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    /* Uobičajeni unutarnji razmak za sadržaj */
+    box-sizing: content-box;
+  }
+  
+  .footer-left {
+    text-align: left;
+    margin-left: 50px;
+  }
+  
+  .footer-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .footer-icon {
+    color:white; /* Boja ikona */
+    margin-left: 15px; /* Opcionalno, prilagodit udaljenost između ikona */
+    margin-right: 15px;
+    font-size: 24px; /* Opcionalno, prilagodit veličinu ikona */
+  }
+  
+  /* Responzivnost footera*/
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      height: auto;
+      padding-bottom: 30px;
+    }
+    
+    .footer-left {
+      text-align: center;
+      margin: 10px 0;
+    }
+    
+    .footer-right {
+      justify-content: center;
+      margin: 10px 0;
+    }
+    
+    .footer-icon {
+      margin: 5px;
+      font-size: 20px;
+    }
+  }
+  
+/*organizatori*/
+
+  .organizer-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .organizer-logos img {
+    width: 200px; /* Prilagodit širinu slike prema potrebi */
+    height: auto; /* Automatsko prilagođavanje visine slike */
+    margin: 0 50px; /* Ravnomjeran razmak između slika */
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  
