@@ -1,0 +1,77 @@
+body, table, td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #000066;
+	font-size: 13px;
+	line-height:140%;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+.light {
+	color: #FFFFFF
+}
+.footer{
+	font-size: xx-small;
+	color: #ffffff
+}
+ 
+a {
+	color:#000000;
+	text-decoration: underline;
+}
+a:hover {
+	color:#000000;
+	text-decoration: none;
+}
+a.meni {
+	color:#000000;
+	text-decoration: none;
+}
+a.meni:hover {
+	color:#000000;
+	text-decoration: underline;
+}
+a.light {
+	color:#FFFFFF;
+	text-decoration: none;
+}
+
+a.light:hover {
+	color:#FFFFFF;
+	text-decoration: underline;
+}
+
+hr {
+	height: 0px;
+	border-bottom: 1px dashed #000066;
+}
+
+.thin_table{
+	border:#666 solid 1px;
+}
+
+.thin_table td{
+	border:#999 solid 1px;
+}
+
+ul.lijevi_meni li{
+	list-style:url(../slike/double_arrow_2.gif);
+	list-style-position:inside;
+	margin-left: -40px;
+	background-image:url(../slike/dot_horiz_2.gif);
+	background-position:bottom;
+	background-repeat:repeat-x;
+	padding-bottom:6px;
+	padding-top:0px;
+	padding-left:4px;
+	font-size:13px;
+}
+
+.news_red{
+	background-image:url(../slike/new_red.gif);
+}
+.news_orange{
+	background-image:url(../slike/new_orange.gif);
+}
