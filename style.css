@@ -48,6 +48,8 @@
     object-fit: cover;
 }
 
+/*Menu bar*/
+
 .navbar {
     display: flex;
     justify-content: flex-end;
@@ -56,6 +58,45 @@
     margin-top: 1em;
 
 }
+
+.nav_logo {
+  width: 150px;
+  height: 70px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+  color: #B92C2A;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #B92C2A;
+}
+
+.navbar-nav .nav-item .dropdown-item:hover:not(.active) {
+  color: #B92C2A;
+}
+
+.navbar-nav .nav-item .nav-link.active::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #B92C2A;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 4px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+/*ostalo*/
 
 .logo {
     display: flex;
@@ -84,44 +125,6 @@ body {
     box-sizing: content-box;
 }
 
-/* Menu bar */
-
-.nav_logo {
-    width: 150px;
-    height: 70px;
-}
-
-.navbar-nav .nav-item .nav-link.active {
-    color: #B92C2A;
-    font-weight: bold;
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-    color: #B92C2A;
-}
-
-.navbar-nav .nav-item .dropdown-item:hover:not(.active) {
-    color: #B92C2A;
-}
-
-.navbar-nav .nav-item .nav-link.active::after {
-    content: "";
-    display: block;
-    width: 8px;
-    height: 8px;
-    background-color: #B92C2A;
-    border-radius: 50%;
-    margin: 0 auto;
-    margin-top: 4px;
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-}
 
 /*info-box*/
 .container {
@@ -152,91 +155,96 @@ body {
     padding: 20px;
 }
 
-/*info - nedovršeno
 
-.info-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.info-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.info-label {
-    color: red;
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.info-value {
-    color: black;
-}
-*/
-
-
-/*news section - vidjet ću
-.card {
+/*news section*/
+  .card {
+    border: 1px solid #ddd;
     border-radius: 10px;
-}
+    padding: 20px;
+  }
 
-.card-img-top {
-    height: 200px;
-    object-fit: cover;
-}
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.carousel-inner {
-    margin-bottom: 20px;
-    transition-duration: 5s;
-}
+  .card-body > div {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+  }
 
-h2 {
+  .card-body i {
+    margin-right: 10px;
+  }
+
+  .card-body .card-title {
+    margin-bottom: 10px;
+  }
+
+  .card-body .icon-text {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+  }
+
+  .card-body .icon-text i {
+    margin-right: 5px;
+  }
+
+  .card-body .icon-text span {
+    margin-left: 50px;
+  }
+
+  /*info section*/
+
+  #info-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-}
+  }
+  
+  #info-card .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 400px; 
+  }
+  
+  #info-card .card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+  }
+  
+  #info-card .card-body > div:not(:last-child) {
+    padding-right: 20px;
+    margin-right: 220px;
+  }
+  
+  #info-card .card-body i {
+    margin-right: 20px;
+  }
+  
+  #info-card .card-body .card-title {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  #info-card {
+    margin-bottom: 50px; /* željeni razmak ispod okvira */
+    margin-top: 50px;
 
-.collapse {
-  transition: height 0.3s ease;
-  height: 0;
-  overflow: hidden;
-}
-
-.collapse.show {
-  height: auto;
-}
-
-.collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-}
-
-.card-body {
-  position: relative;
-}
-
-.btn.collapsed .btn-text {
-  display: inline;
-}
-
-.btn .btn-text {
-  display: none;
-}
-
-.btn.collapsed .btn-icon-expand:before {
-  content: '+';
-}
-
-.btn .btn-icon-expand:before {
-  content: '-';
-}
-
-*/
+  }
+  
+  /* Primjer ostalih stilova za dodatni razmak */
+  #other-content {
+    margin-top: 50px; /* željeni razmak iznad ostalog sadržaja */
+  }
+  
 
 /*news section*/
 
@@ -251,7 +259,7 @@ h2 {
     /* Dodati željeni razmak iznad kartica */
 }
 
-.card {
+.card-news {
     margin-bottom: 20px;
     /* Dodati željeni razmak između kartica */
 }
@@ -378,12 +386,3 @@ h2 {
     margin-bottom: 90px;
   }
   
-
-  .naslov{
-    font-family: 'DM Serif Text', serif;
-  }
-
-  .tekst{
-   
-font-family: 'Public Sans', sans-serif;
-  }
