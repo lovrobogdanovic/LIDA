@@ -64,6 +64,7 @@
   height: 70px;
 }
 
+
 .navbar-nav .nav-item .nav-link.active {
   color: #B92C2A;
   font-weight: bold;
@@ -87,6 +88,11 @@
   margin: 0 auto;
   margin-top: 4px;
 }
+
+.navbar-nav .nav-link.active {
+  color: red;
+}
+
 
 .navbar {
   position: fixed;
@@ -240,6 +246,7 @@ body {
 
   }
   
+  
   /* Primjer ostalih stilova za dodatni razmak */
   #other-content {
     margin-top: 50px; /* željeni razmak iznad ostalog sadržaja */
@@ -254,15 +261,56 @@ body {
     /* Dodati željeni razmak ispod naslova "NEWS" */
 }
 
-.news-section {
-    margin-top: 20px;
-    /* Dodati željeni razmak iznad kartica */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.card-news {
-    margin-bottom: 20px;
-    /* Dodati željeni razmak između kartica */
+.card-img-top {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
 }
+
+.card-title {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 16px;
+  margin-bottom: 0.5rem;
+}
+
+.read-more {
+  margin-top: 0.5rem;
+}
+
+
+@media (max-width: 767.98px) {
+  #news-carousel .carousel-inner .carousel-item .row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  #news-carousel .carousel-inner .carousel-item .col {
+    flex: 0 0 100%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  #news-carousel .carousel-inner .carousel-item .col:last-child {
+    margin-right: 0;
+  }
+}
+
+.mb-5 {
+  margin-bottom: 40px; /* Prilagodite vrijednost margine prema potrebi */
+}
+
 
 
 /*button*/
@@ -368,21 +416,5 @@ body {
       margin: 5px;
       font-size: 20px;
     }
-  }
-  
-/*organizatori*/
-
-  .organizer-logos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .organizer-logos img {
-    width: 200px; /* Prilagodit širinu slike prema potrebi */
-    height: auto; /* Automatsko prilagođavanje visine slike */
-    margin: 0 50px; /* Ravnomjeran razmak između slika */
-    margin-top: 90px;
-    margin-bottom: 90px;
   }
   

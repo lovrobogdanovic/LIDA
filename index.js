@@ -28,23 +28,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-var myCarousel = document.querySelector('#carouselExampleIndicators')
-var carousel = new bootstrap.Carousel(myCarousel, {
-    interval: 3000, // Adjust the interval (in milliseconds) as needed
-    wrap: true // Set to false if you don't want the carousel to wrap around
-})
+
+document.addEventListener("DOMContentLoaded", function() {
+  if (window.innerWidth < 768) {
+    // Aktivirajte Bootstrap Carousel samo na mobilnim uređajima
+    var newsCarousel = new bootstrap.Carousel(document.getElementById("news-carousel"), {
+      interval: false // Onemogućava automatsko rotiranje kartica
+    });
+  }
+});
 
 //news
 
 // < script src = "https://code.jquery.com/jquery-3.6.0.min.js" ></script>
 //<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
-$(document).ready(function () {
-    // Onemogućava automatsko listanje karusela
-    $('.carousel').carousel({
-        interval: false
-    });
-});
 
 
 
