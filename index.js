@@ -29,13 +29,14 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  if (window.innerWidth < 768) {
-    // Aktivirajte Bootstrap Carousel samo na mobilnim uređajima
-    var newsCarousel = new bootstrap.Carousel(document.getElementById("news-carousel"), {
-      interval: false // Onemogućava automatsko rotiranje kartica
-    });
-  }
+document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth < 768) {
+        // Aktivirajte Bootstrap Carousel samo na mobilnim uređajima
+        var newsCarousel = new bootstrap.Carousel(document.getElementById("news-carousel"), {
+            interval: false
+        });
+
+    }
 });
 
 //news
