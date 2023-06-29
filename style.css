@@ -17,6 +17,10 @@
   /* Prilagodit visinu po potrebi */
 }
 
+.carousel-indicators {
+  display: none;
+}
+
 
 .carousel-inner {
   border-radius: 10px;
