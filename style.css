@@ -80,7 +80,7 @@
 .navbar {
   display: flex;
   justify-content: flex-end;
-  padding: 100em;
+  padding: 1em;
   margin-bottom: 5em;
   margin-top: 1em;
 }
