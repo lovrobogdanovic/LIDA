@@ -71,16 +71,6 @@
   color: #B92C2A;
 }
 
-.navbar-nav .nav-item .nav-link.active::after {
-  content: "";
-  display: block;
-  width: 8px;
-  height: 8px;
-  background-color: #B92C2A;
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-top: 4px;
-}
 
 .navbar-nav .nav-link.active {
   color: red;
@@ -121,6 +111,14 @@
     order: 2;
   }
 }
+
+@media (max-width: 767px) {
+  .dropdown-menu .dropdown-item {
+    list-style: none;
+  }
+}
+
+
 
 
 /*ostalo*/
@@ -172,6 +170,14 @@ body {
   /* Stilizacija slidera */
   margin-top: 20px;
 }
+
+@media (max-width: 767px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+}
+
 
 .content-container {
   margin-top: 20px;
@@ -427,13 +433,15 @@ body {
   }
 
   .footer-left {
-    text-align: center;
+    text-align: left;
     margin: 10px 0;
   }
 
   .footer-right {
     justify-content: center;
     margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .footer-icon {
@@ -443,14 +451,14 @@ body {
 }
 
 /* Organizatori */
-
-
 @media (max-width: 767px) {
   .d-flex.flex-wrap.justify-content-center.align-items-center.mb-4 img {
     max-width: 100px;
     max-height: 100px;
     margin-bottom: 10px;
+    margin-right: 10px; /* Dodan razmak između logotipa */
   }
 }
+
 
 }

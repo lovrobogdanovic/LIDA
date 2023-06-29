@@ -15,17 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    var currentPath = window.location.pathname;
-    var currentPage = currentPath.split("/").pop();
-
-    navLinks.forEach(function (link) {
-        var linkPath = link.getAttribute("href");
-        var linkPage = linkPath.split("/").pop();
-
-        if (linkPage === currentPage) {
-            link.classList.add("active", "current");
-        }
-    });
+  
 });
 
 
@@ -40,6 +30,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //news
+
+document.addEventListener("DOMContentLoaded", function() {
+    var readMoreButtons = document.querySelectorAll(".read-more");
+    
+    readMoreButtons.forEach(function(button) {
+      button.addEventListener("click", function() {
+        var target = this.getAttribute("data-bs-target");
+        var collapseElement = document.querySelector(target);
+        
+        collapseElement.classList.toggle("show");
+      });
+    });
+  });
+  
 
 // < script src = "https://code.jquery.com/jquery-3.6.0.min.js" ></script>
 //<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
