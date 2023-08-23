@@ -9,6 +9,7 @@ Ukoliko korisnik/ca želi mijenjati sadržaj stranice potrebno je poznavati sadr
 Glavna stranica "index.html" i sve ostale podstranice podijeljene su u 2 glavna dijela: ```<head>``` (Zaglavlje dokumenta koje se NE PRIKAZUJE na web mjestu) i ```<body>``` (tijelo dokumenta koje se PRIKAZUJE kada se pokrene web mjesto). Ukoliko korisnik/ca izmijenjuje sadržaj web mjesta važno je ne dirati ```<head>``` dio dokumenta ako nije siguran/na što radi. Sadržaj web mjeta mijenja se u ```<body>``` dijelu dokumenta.
 
 Na početnoj se stranici nalaze najvažniji elementi web mjesta:
+
 ---
 
 ## 1. Navigacijska traka odnosno NavBar.
@@ -16,16 +17,17 @@ Na početnoj se stranici nalaze najvažniji elementi web mjesta:
 Ovaj se element nalazi na početnoj, kao i na svim ostalim podstranicama web mjesta. Navigacijska traka dopušta korisnicima prelazak s jedne stranice na drugu unutar nekog web mjesta. Ukoliko korisnik/ca želi mijenjati sadržaj navigacijske trake potrebno je pronaći element ```<nav>``` koji se nalazi na početnoj kao i na svim drugim podstranicama u ```<body>``` dijelu dokumenta. Ukoliko je potrebno izmijeniti sadržaj navigacijske trake potrebno je pronaći element koji se želi zamijeniti i promijeniti putanju i naslov nove stranice unutar ```<a href="..."></a>``` elementa.
 
 Nakon izmjene, cijeli kod navigacijske trake (od ```<nav>``` do ```</nav>```) kopirati i zalijepiti na sve podstranice web mjesta kako bi se novoj stranici moglo pristupiti sa bilo koje druge stranice web mjesta. Također, dokument **index.html** označen je komentarima koje korisnik/ca može koristiti kako bi pronašao/la element koji želi izmijeniti.
+
 ---
 
 ## 2. Naslov i slider sa fotografijama.
 
 Naslov koji se nalazi pokraj slidera sa fotografijama korisnik mijenja tako da unutar **"index.html"** datoteke pronađe tekst naslova i promijeni ga pritom pazeći da ne obriše elemente unutar koji se postojeći naslov nalazi. Element naslova označen je komentarima za lakše pronalaženje.
-Slider sa fotografijama je komponenta frameworka pod nazivom Bootstrap koji se koristio za izradu ovog web mjesta. Naziv komponente je **Carousel**. Element je podešen kako bi mu pozicija bila pokraj naslova a ukoliko je korisnik/ca želi promijeniti potrebno je pažljivo slijediti navedene korake: 
+Slider sa fotografijama je komponenta frameworka pod nazivom Bootstrap koji se koristio za izradu ovog web mjesta. Naziv komponente je **Carousel**. Element je podešen kako bi mu pozicija bila pokraj naslova a ukoliko ga korisnik/ca želi promijeniti potrebno je pažljivo slijediti navedene korake: 
 * fotografije koje se vrte unutar slidera nalaze se u poddirektoriju "fotke_slider". Ukoliko se iste žele izmijeniti potrebno je nove fotografije staviti u taj poddirektoriji pritom pazeći na velika i mala slova te format fotografija koji bi idealno trebao biti .jpg ili .png. 
 * Nakon što se fotografije stave u navedeni poddirektoriji potrebno je pronaći element Carousel koji je označen komentarom za lakše snalaženje. Unutar elementa ```<img src="...">``` postavlja se putanja na kojoj se nalaze fotografije.
 
-Npr. korisnik želi u slider ubaciti novu fotografiju koja se zove "gradOsijek.jpg". Korisnik će to učiniti tako da svoju fotografiju stavi u poddirektoriji "fotke_slider", nakon toga pronađe element ```<img src="...">``` iznad kojega je komentar da je to element unutar kojega su fotografije na slideru. Nakon toga korisnik mijenja samo naziv fotografije nakon kose (/) crte. Ako je postojeći element ```<img src="fotke_slider/Osijek.jpg">``` korisnik mijenja samo naziv "osijek.jpg" u "gradOsijek.jpg" nakon čega će element izgledati ovako ```<img src="fotke_slider/gradOsijek.jpg">```. Posebno paziti na velika i mala slova!
+Npr. korisnik želi u slider ubaciti novu fotografiju koja se zove "gradOsijek.jpg". Korisnik će to učiniti tako da svoju fotografiju stavi u poddirektoriji "fotke_slider", nakon toga pronađe element ```<img src="...">``` iznad kojega je komentar ```<!-- SLIDER SA FOTOGRAFIJAMA-->```. Nakon toga korisnik mijenja samo naziv fotografije nakon kose (/) crte. Ako je postojeći element ```<img src="fotke_slider/Osijek.jpg">``` korisnik mijenja samo naziv "osijek.jpg" u "gradOsijek.jpg" nakon čega će element izgledati ovako ```<img src="fotke_slider/gradOsijek.jpg">```. Posebno paziti na velika i mala slova!
 ---
 
 ## 3. Info kartica
