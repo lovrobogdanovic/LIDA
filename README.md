@@ -28,6 +28,7 @@ Slider sa fotografijama je komponenta frameworka pod nazivom Bootstrap koji se k
 * Nakon što se fotografije stave u navedeni poddirektoriji potrebno je pronaći element Carousel koji je označen komentarom za lakše snalaženje. Unutar elementa ```<img src="...">``` postavlja se putanja na kojoj se nalaze fotografije.
 
 Npr. korisnik želi u slider ubaciti novu fotografiju koja se zove "gradOsijek.jpg". Korisnik će to učiniti tako da svoju fotografiju stavi u poddirektoriji "fotke_slider", nakon toga pronađe element ```<img src="...">``` iznad kojega je komentar ```<!-- SLIDER SA FOTOGRAFIJAMA-->```. Nakon toga korisnik mijenja samo naziv fotografije nakon kose (/) crte. Ako je postojeći element ```<img src="fotke_slider/Osijek.jpg">``` korisnik mijenja samo naziv "osijek.jpg" u "gradOsijek.jpg" nakon čega će element izgledati ovako ```<img src="fotke_slider/gradOsijek.jpg">```. Posebno paziti na velika i mala slova!
+
 ---
 
 ## 3. Info kartica
