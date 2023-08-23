@@ -33,23 +33,27 @@ Npr. korisnik želi u slider ubaciti novu fotografiju koja se zove "gradOsijek.j
 ## 3. Info kartica
 
 Sljedeći element početne stranice je info bar koji se nalazi odmah ispod naslova i slidera sa fotografijama.
-Ukoliko korisnik želi promijeniti sadržaj potrebno je pronaći element ```<div>``` sa ID-em **"info-card"** ```<div class="card" id="info-card">```. Ovaj element također sadrži komentar   ```<!-- INFO KARICA-->``` za lakše snalaženje. Ukoliko korisnik/ca želi promijeniti sadržaj info kartice jednostavno može promijeniti sadržaj vodeći računa o tome da ne obriše elemente koji obuhvaćaju tekst. Unutar elementa ```<h5>``` korisnik/ca može promijeniti naslov, a unutar elementa ```<p>``` može promijeniti sadržaj. 
+Ukoliko korisnik želi promijeniti sadržaj potrebno je pronaći element ```<div>``` sa ID-em **"info-card"** ```<div class="card" id="info-card">```. Ovaj element također sadrži komentar   ```<!-- INFO KARICA-->``` za lakše snalaženje. Ukoliko korisnik/ca želi promijeniti sadržaj info kartice jednostavno može promijeniti sadržaj vodeći računa o tome da ne obriše elemente koji obuhvaćaju tekst. Unutar elementa ```<h5>``` korisnik/ca može promijeniti naslov, a unutar elementa ```<p>``` može promijeniti sadržaj.
+
 ---
 
 ## 4. Vijesti
 
-Ispod elementa info kartice nalaze se vijesti odnosno skup kartica sa različitih temama. Ukoliko se ovaj element želi promijeniti potrebno je pronaći komentar  ```<!-- VIJESTI -->``` i promijeniti naslov u ```<h5>``` elementu i sadržaj u ```<p>``` elementu. Ovaj element također ima dodatak "read more" koji se klikom proširuje s dodatnim tekstom. Kako bi se taj dio kartice promijenio potrebno je dodatni tekst napisati unutar elementa ```<div class="collapse" id="moreText1">```. 
+Ispod elementa info kartice nalaze se vijesti odnosno skup kartica sa različitih temama. Ukoliko se ovaj element želi promijeniti potrebno je pronaći komentar  ```<!-- VIJESTI -->``` i promijeniti naslov u ```<h5>``` elementu i sadržaj u ```<p>``` elementu. Ovaj element također ima dodatak "read more" koji se klikom proširuje s dodatnim tekstom. Kako bi se taj dio kartice promijenio potrebno je dodatni tekst napisati unutar elementa ```<div class="collapse" id="moreText1">```.
+
 ---
 
 ## 5. Logo organizatora
 
 Sljedeći dio početne strnaice sadrži logo organizatora. Ovaj dio stranice ne sadrži tekst već isključivo fotografije koje se mogu promijeniti tako da korisnik/ca stavi fotografije koje želi koristiti u poddirektorij pod nazivom "organizatori_logo", nakon toga treba pronaći komentar ```<!--LOGO ORGANIZATORA-->``` i u ```<img src="...">``` elementu ponovi isti proces kao u točki 2 ovih uputa (2. Naslov i slider s fotografijama).
+
 ---
 
 ## 6. Footer
 
 Zadnji dio početne stranice je footer koji sadrži informacije o mjestu i vremenu održavanja konferecije. Ukoliko korisnik/ca želi promijeniti ovaj dio potrebno je pronaći komentar ```<!-- FOOTER-->```
 te u elementu  ```<div class="footer-left">``` navesti željene podatke.
+
 ---
 
 
@@ -59,4 +63,4 @@ Početna stranica sadrži najviše elemenata dok ostale podstranice sadrže iskl
 
 Svaka podstranica organizirana je na isti način. Sadrži navigacijsku traku ispod koje se nalazi komentar ```<!-- SADRŽAJ -->```. Ispod navedenog komentara nalaze se dva ```<div>``` elementa. Prvi je  ```<div class="naslov">``` unutar kojega je moguće promijeniti naslov stranice a drugi je ```<div class="tekst">``` unutar kojega se može promijeniti sadržaj koji se prikazuje ispod naslova.
  
- 
+---
