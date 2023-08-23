@@ -14,7 +14,7 @@ Na početnoj se stranici nalaze najvažniji elementi web mjesta:
 
 ## 1. Navigacijska traka odnosno NavBar.
 
-Ovaj se element nalazi na početnoj, kao i na svim ostalim podstranicama web mjesta. Navigacijska traka dopušta korisnicima prelazak s jedne stranice na drugu unutar nekog web mjesta. Ukoliko korisnik/ca želi mijenjati sadržaj navigacijske trake potrebno je pronaći element ```<nav>``` koji se nalazi na početnoj kao i na svim drugim podstranicama u ```<body>``` dijelu dokumenta. Ukoliko je potrebno izmijeniti sadržaj navigacijske trake potrebno je pronaći element koji se želi zamijeniti i promijeniti putanju i naslov nove stranice unutar ```<a href="..."></a>``` elementa.
+Ovaj se element nalazi na početnoj, kao i na svim ostalim podstranicama web mjesta. Navigacijska traka dopušta korisnicima prelazak s jedne stranice na drugu unutar nekog web mjesta. Ukoliko korisnik/ca želi mijenjati sadržaj navigacijske trake potrebno je pronaći element ```<nav>``` koji se nalazi na početnoj kao i na svim drugim podstranicama u ```<body>``` dijelu dokumenta. Ukoliko je potrebno izmijeniti sadržaj navigacijske trake potrebno je pronaći element koji se želi zamijeniti i promijeniti putanju i naslov nove stranice unutar ```<a href="...">```*novi tekst* ``` </a>``` elementa.
 
 Nakon izmjene, cijeli kod navigacijske trake (od ```<nav>``` do ```</nav>```) kopirati i zalijepiti na sve podstranice web mjesta kako bi se novoj stranici moglo pristupiti sa bilo koje druge stranice web mjesta. Također, dokument **index.html** označen je komentarima koje korisnik/ca može koristiti kako bi pronašao/la element koji želi izmijeniti.
 
@@ -34,13 +34,13 @@ Npr. korisnik želi u slider ubaciti novu fotografiju koja se zove "gradOsijek.j
 ## 3. Info kartica
 
 Sljedeći element početne stranice je info bar koji se nalazi odmah ispod naslova i slidera sa fotografijama.
-Ukoliko korisnik želi promijeniti sadržaj potrebno je pronaći element ```<div>``` sa ID-em **"info-card"** ```<div class="card" id="info-card">```. Ovaj element također sadrži komentar   ```<!-- INFO KARICA-->``` za lakše snalaženje. Ukoliko korisnik/ca želi promijeniti sadržaj info kartice jednostavno može promijeniti sadržaj vodeći računa o tome da ne obriše elemente koji obuhvaćaju tekst. Unutar elementa ```<h5>``` korisnik/ca može promijeniti naslov, a unutar elementa ```<p>``` može promijeniti sadržaj.
+Ukoliko korisnik želi promijeniti sadržaj potrebno je pronaći element ```<div>``` sa ID-em **"info-card"** ```<div class="card" id="info-card">``` *novi tekst* ```</div>```. Ovaj element također sadrži komentar   ```<!-- INFO KARICA-->``` za lakše snalaženje. Ukoliko korisnik/ca želi promijeniti sadržaj info kartice jednostavno može promijeniti sadržaj vodeći računa o tome da ne obriše elemente koji obuhvaćaju tekst. Unutar elementa ```<h5>``` *novi naslov* ```</h5>``` korisnik/ca može promijeniti naslov, a unutar elementa ```<p>``` *novi tekst* ```</p>``` može promijeniti sadržaj.
 
 ---
 
 ## 4. Vijesti
 
-Ispod elementa info kartice nalaze se vijesti odnosno skup kartica sa različitih temama. Ukoliko se ovaj element želi promijeniti potrebno je pronaći komentar  ```<!-- VIJESTI -->``` i promijeniti naslov u ```<h5>``` elementu i sadržaj u ```<p>``` elementu. Ovaj element također ima dodatak "read more" koji se klikom proširuje s dodatnim tekstom. Kako bi se taj dio kartice promijenio potrebno je dodatni tekst napisati unutar elementa ```<div class="collapse" id="moreText1">```.
+Ispod elementa info kartice nalaze se vijesti odnosno skup kartica sa različitih temama. Ukoliko se ovaj element želi promijeniti potrebno je pronaći komentar  ```<!-- VIJESTI -->``` i promijeniti naslov u ```<h5>``` *novi naslov* ```</h5>``` elementu i sadržaj u ```<p>``` elementu. Ovaj element također ima dodatak "read more" koji se klikom proširuje s dodatnim tekstom. Kako bi se taj dio kartice promijenio potrebno je dodatni tekst napisati unutar elementa ```<div class="collapse" id="moreText1">``` *novi tekst* ```</div>```.
 
 ---
 
