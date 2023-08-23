@@ -36,13 +36,13 @@ Npr. korisnik želi u slider ubaciti novu fotografiju koja se zove "gradOsijek.j
 ## 3. Info kartica
 
 Sljedeći element početne stranice je info bar koji se nalazi odmah ispod naslova i slidera sa fotografijama.
-Ukoliko korisnik želi promijeniti sadržaj potrebno je pronaći element ```<div>``` sa ID-em **"info-card"** ```<div class="card" id="info-card">```. Ovaj element također sadrži komentar   ```<!-- INFO KARICA-->``` za lakše snalaženje. Ukoliko korisnik/ca želi promijeniti sadržaj info kartice jednostavno može promijeniti sadržaj vodeći računa o tome da ne obriše elemente koji obuhvaćaju tekst. Unutar elementa ```<h5>...</h5>``` korisnik/ca može promijeniti naslov, a unutar elementa ```<p>...</p>``` može promijeniti sadržaj.
+Ukoliko korisnik želi promijeniti sadržaj potrebno je pronaći element ```<div>``` sa ID-em **"info-card"** ```<div class="card" id="info-card">```. Ovaj element također sadrži komentar   ```<!-- INFO KARICA-->``` za lakše snalaženje. Ukoliko korisnik/ca želi promijeniti sadržaj info kartice jednostavno može promijeniti sadržaj vodeći računa o tome da ne obriše elemente koji obuhvaćaju tekst. Unutar elementa ```<h5>...</h5>``` korisnik/ca može promijeniti naslov, a unutar elementa ```<p>...</p>``` može promijeniti sadržaj. 
 
 ---
 
 ## 4. Vijesti
 
-Ispod elementa info kartice nalaze se vijesti odnosno skup kartica sa različitih temama. Ukoliko se ovaj element želi promijeniti potrebno je pronaći komentar  ```<!-- VIJESTI -->``` i promijeniti naslov u ```<h5>...</h5>``` elementu i sadržaj u ```<p>...</p>``` elementu. Ovaj element također ima dodatak "read more" koji se klikom proširuje s dodatnim tekstom. Kako bi se taj dio kartice promijenio potrebno je dodatni tekst napisati unutar elementa ```<div class="collapse" id="moreText1">``` *novi tekst* ```</div>```.
+Ispod elementa info kartice nalaze se vijesti odnosno skup kartica sa različitih temama. Ukoliko se ovaj element želi promijeniti potrebno je pronaći komentar  ```<!-- VIJESTI -->``` i promijeniti naslov u ```<h5>...</h5>``` elementu i sadržaj u ```<p>...</p>``` elementu. Ovaj element također ima dodatak "read more" koji se klikom proširuje s dodatnim tekstom. Kako bi se taj dio kartice promijenio potrebno je dodatni tekst napisati unutar elementa ```<div class="collapse" id="moreText1">``` *novi tekst* ```</div>```. Vijesti također sadrže fotografije koje se nalaze u poddirektoriju **"foto_news"** koje korisnik/ca može promijeniti slijedeći korake iz točke 2 ovih uputa uz izmjenu da vlastite fotografije stavi u navedeni poddirektorij. 
 
 ---
 
